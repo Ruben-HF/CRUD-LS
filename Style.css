@@ -1,0 +1,95 @@
+html,body{
+    height:100%;
+    margin: 0;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: bisque !important;
+}
+
+nav{
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+}
+
+.accesos{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.lstorage{
+    box-shadow: 2px 2px 2px 1px  rgba(16, 190, 250, 0.5);
+}
+
+.fotoacceso{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.AddInv{
+    width: 90%;
+    min-height: 90px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    box-shadow: 3px 3px 3px #333;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+form{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label{
+    font-weight: bold;
+    width: 100% !important;
+    display: flex;
+    margin-bottom: 9px;
+}
+
+.registrar{
+    width: 100% !important;
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+}
+
+input{
+    width: 50% !important;
+    margin-bottom: 9px !important;
+}
+
+.EditInv{
+    width: 90%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+}
+
+table{
+    background-color: #333;
+    width: 100%;
+    box-shadow: 1px 1px 10px #333;
+}
+
+thead{
+    width: 100% !important;
+    color: whitesmoke;
+}
+
+td{
+    background-color: aliceblue;
+    padding: 1%;
+    text-align: center;
+}
