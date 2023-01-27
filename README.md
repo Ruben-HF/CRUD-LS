@@ -1,6 +1,9 @@
 # RESUMEN:
 Se realiza una aplicación web sencilla utilizando conocimientos de HTML, CSS y JAVASCRIPT como lenguaje de programación para impulsar un CRUD, mismo que se ejecuta de manera local con almacenamiento "LOCAL STORAGE" con la interfaz de inicio de sesión. 
 
+### Video demostración de funcionamiento: 
+https://www.loom.com/share/aba788b94fbb4bba938f89cbc7ad60de
+
 
 ## DESCRIPCIÓN:
 Se trabaja sobre la idea general de utilizar el registro de Agenda de los Programadores integrado a una aplicación web con más desarrollo a futuro, sentando las bases en este registro. 
