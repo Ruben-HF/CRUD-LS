@@ -1,3 +1,6 @@
+
+//(Create // función 'guardar') que toma los datos de los diferentes input por id cargando dichos datos mediante JSON.parse al almacenamiento local. 
+
 function guardar(){
     let nombre = document.getElementById('nombre').value
     let apellido = document.getElementById('apellido').value
@@ -26,6 +29,8 @@ function guardar(){
     render()
 }
 
+//(Read // función 'render') que permite visualizar los datos obtenidos del almacenamiento local mediante un inner.hmtl en una tabla de contenido con los respectivos botones para editar o borrar el elemento seleccionado. 
+
 function render() {
     console.log(localStorage.getItem('valores'))
 
@@ -52,6 +57,8 @@ function render() {
 
 }
 
+//(Delete // función 'eliminar') permitirá borrar los datos del almacenamiento local, renderizando la nueva lista sin el elemento seleccionado para su eliminación. 
+
 function borrar(position){
     let datos = JSON.parse(localStorage.getItem('valores')) ? JSON.parse(localStorage.getItem('valores')) : []
     console.log(datos.splice(position,1))
@@ -60,6 +67,8 @@ function borrar(position){
     render()
 }
 
+
+//(Upgrade // función 'editar') permitiendo actualizar y editar los datos obteniendo los datos del almacenamiento local visualizandolos en los input para modificar dicha información.
 
 function editar(ps){
     let datos = JSON.parse(localStorage.getItem('valores')) ? JSON.parse(localStorage.getItem('valores')) : []
@@ -89,6 +98,8 @@ function editar(ps){
 
 }
 
+//(Upgrade 2 // función 'reguardar') permitirá volver a guardar la información para su lectura en renderizado).
+
 function reguardar(i){
     let datos = JSON.parse(localStorage.getItem('valores')) ? JSON.parse(localStorage.getItem('valores')) : []
 
@@ -110,6 +121,8 @@ function reguardar(i){
 
     render()
 }
+
+//En caso de haber seleccionado la edición por error o validar que los datos eran correctos, se puede retornar a la lectura sin modificar la información con la función salir. 
 
 function salir(e){
     e.parentElement.remove()
